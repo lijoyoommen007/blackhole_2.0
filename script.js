@@ -1,6 +1,6 @@
 const canvas = document.getElementById("canvas");
 const context = canvas.getContext("2d");
-context.setLineDash([10,15]);
+context.setLineDash([5,15]);
 
 let radius = 20;
 let maxRadius = Math.min(canvas.width, canvas.height) / 2;
@@ -28,7 +28,7 @@ function animate() {
     context.moveTo(canvas.width / 2 + x1, canvas.height / 2 + y1);
     context.lineTo(canvas.width / 2 + x2, canvas.height / 2 + y2);
     context.strokeStyle = "white";
-    context.lineWidth = 4;
+    context.lineWidth = 2;
     context.stroke();
   }
 
