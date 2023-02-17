@@ -4,6 +4,7 @@ context.setLineDash([5,15]);
 
 let radius = 0;
 let maxRadius = Math.min(canvas.width, canvas.height) / 2;
+console.log(canvas.width);
 
 // Create a new Image object and set its src property
 const image = new Image();
